@@ -32,10 +32,13 @@
     height: 20px;
     position: relative;
     top: 130px;
-    left: 480px;
+    left: 500px;
     animation: block 1s infinite linear;
 }
 @keyframes block{
-    0%{left: 480px}
+    0%{left: 500px}
     100%{left: -20px}
+}
+p{
+    text-align: center;
 }

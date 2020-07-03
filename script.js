@@ -6,7 +6,6 @@ function jump(){
     character.classList.add("animate");
     setTimeout(function(){
         character.classList.remove("animate");
-        counter++;
     },300);
 }
 var checkDead = setInterval(function() {
@@ -17,5 +16,8 @@ var checkDead = setInterval(function() {
         alert("Game Over. score: "+counter);
         counter=0;
         block.style.animation = "block 1s infinite linear";
+    }else{
+        counter++;
+        document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
     }
 }, 10);
