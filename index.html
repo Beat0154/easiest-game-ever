@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" onclick="jump()">
+<html lang="en" onclick="jump()" onkeypress="jump()">
+
+
 <head>
+<script>
+function sta(){};
+function jump(){};
+function check(){};
+</script>
+<link href='style.css' rel='stylesheet'/>
     <meta charset="UTF-8">
     <title>Jump Game</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<p>Score: <span id="scoreSpan"></span></p>
+    <br>
+    <p>Best Score: <span id="scorebest">0</span></p>
     <div class="game">
-        <div id="character"></div>
+        <div id="character">
+        
+        </div>
         <div id="block"></div>
     </div>
-    <p>Score: <span id="scoreSpan"></span></p>
+    <h1 id="btns" onclick="this.style.display='none';sta()">
+      Start The Game
+    </h1>
+<script src='script.js'>
+</script>
 </body>
-<script src="script.js"></script>
-</html>
