@@ -1,4 +1,5 @@
-var character = document.getElementById("character");
+var character = new Image();
+character.src = "rakhi.png";
 var block = document.getElementById("block");
 var counter=0;
 function jump(){
